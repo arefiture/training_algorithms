@@ -1,9 +1,15 @@
 class Solution:
+    def isPalindromeMath(self, x: int) -> bool:
+        start_number = x
+        reverse_number = 0
+        while start_number > 0:
+            diff = start_number % 10
+            reverse_number = reverse_number * 10 + diff
+            start_number = (start_number - diff) // 10
+        return x == reverse_number
+
     def isPalindrome(self, x: int) -> bool:
-        number = str(x)
-        if number != number[::-1]:
-            return False
-        return True
+        return (number := str(x)) == number[::-1]
 
 
 solution = Solution()
