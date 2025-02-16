@@ -4,4 +4,4 @@
 
 # Оглавление
 
-1. Задачки с [leetcode](leetcode/README.md)
+1. Задачки с [leetcode](leetcode/README.md#Оглавление)
